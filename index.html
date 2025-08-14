@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выберите свой Rolls-Royce (Анимация)</title>
+    <!-- Подключаем Tailwind CSS для быстрого оформления -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Почти белый фон */
+        }
+    </style>
+</head>
+<body class="p-8">
+
+    <!-- Главный контейнер для центрирования всего контента -->
+    <div class="max-w-7xl mx-auto bg-white shadow-xl rounded-lg p-12">
+
+        <!-- Верхняя навигационная панель -->
+        <header class="flex items-center justify-between mb-12">
+            <!-- Кнопка "гамбургер-меню" -->
+            <button class="text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <!-- Логотип Rolls-Royce -->
+            <div class="mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
+                    <!-- Заглушка для логотипа, ты можешь заменить ее на настоящий SVG -->
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#2c3e50" stroke-width="2"/>
+                    <path d="M50 5 L50 95" stroke="#2c3e50" stroke-width="2"/>
+                    <path d="M5 50 L95 50" stroke="#2c3e50" stroke-width="2"/>
+                    <text x="50" y="55" font-family="Arial" font-size="20" font-weight="bold" fill="#2c3e50" text-anchor="middle">RR</text>
+                </svg>
+            </div>
+            <!-- Кнопка "Закрыть" или крестик -->
+            <button class="text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </header>
+
+        <!-- Заголовок страницы -->
+        <h1 class="text-3xl font-light text-center tracking-wider uppercase mb-12">Выберите свой Rolls-Royce</h1>
+
+        <!-- Сетка с автомобилями -->
+        <section class="grid grid-cols-2 gap-8 text-center">
+            
+            <!-- Карточка для PHANTOM с анимацией -->
+            <div class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl rounded-xl p-4">
+                <img src="https://placehold.co/300x150/000000/FFFFFF?text=Phantom" alt="Rolls-Royce Phantom" class="mx-auto mb-4 object-cover w-full h-full rounded-md">
+                <h2 class="font-bold text-lg tracking-wide uppercase">PHANTOM</h2>
+                <p class="text-sm text-gray-500">Unmistakably Phantom</p>
+            </div>
+
+            <!-- Карточка для DAWN с анимацией -->
+            <div class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl rounded-xl p-4">
+                <img src="https://placehold.co/300x150/00008B/FFFFFF?text=Dawn" alt="Rolls-Royce Dawn" class="mx-auto mb-4 object-cover w-full h-full rounded-md">
+                <h2 class="font-bold text-lg tracking-wide uppercase">DAWN</h2>
+                <p class="text-sm text-gray-500">Sublime open-top motoring</p>
+            </div>
+
+            <!-- Карточка для CULLINAN с анимацией -->
+            <div class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl rounded-xl p-4">
+                <img src="https://placehold.co/300x150/B22222/FFFFFF?text=Cullinan" alt="Rolls-Royce Cullinan" class="mx-auto mb-4 object-cover w-full h-full rounded-md">
+                <h2 class="font-bold text-lg tracking-wide uppercase">CULLINAN</h2>
+                <p class="text-sm text-gray-500">Effortless, everywhere</p>
+            </div>
+
+            <!-- Карточка для GHOST с анимацией -->
+            <div class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl rounded-xl p-4">
+                <img src="https://placehold.co/300x150/00008B/FFFFFF?text=Ghost" alt="Rolls-Royce Ghost" class="mx-auto mb-4 object-cover w-full h-full rounded-md">
+                <h2 class="font-bold text-lg tracking-wide uppercase">GHOST</h2>
+                <p class="text-sm text-gray-500">Pure, contemporary luxury</p>
+            </div>
+            
+            <!-- Карточка для WRAITH с анимацией -->
+            <div class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl rounded-xl p-4">
+                <img src="https://placehold.co/300x150/696969/FFFFFF?text=Wraith" alt="Rolls-Royce Wraith" class="mx-auto mb-4 object-cover w-full h-full rounded-md">
+                <h2 class="font-bold text-lg tracking-wide uppercase">WRAITH</h2>
+                <p class="text-sm text-gray-500">Power, style, drama</p>
+            </div>
+
+            <!-- Карточка для BLACK BADGE с анимацией -->
+            <div class="cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl rounded-xl p-4">
+                <img src="https://placehold.co/300x150/000000/FFFFFF?text=Black Badge" alt="Rolls-Royce Black Badge" class="mx-auto mb-4 object-cover w-full h-full rounded-md">
+                <h2 class="font-bold text-lg tracking-wide uppercase">BLACK BADGE</h2>
+                <p class="text-sm text-gray-500">Boldly in black, mood, drawn and white</p>
+            </div>
+
+        </section>
+        
+    </div>
+
+</body>
+</html>
